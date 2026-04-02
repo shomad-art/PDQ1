@@ -70,21 +70,50 @@ public class latihanPercabangan {
                 System.out.println();
 
                 totalHarga = harga * jumlahBeli;
+                System.out.println("Nama Barang: " + namaBarang);
+                System.out.println("Harga: " + harga);
                 System.out.println("jumlah beli: " + jumlahBeli );
+                System.out.println("Diskon: " + diskon);
                 System.out.println("Total Harga: " + totalHarga);
                 //hitung diskon
                 if (totalHarga > 100000) {
-                    diskon = totalHarga * 0.05 * 0.02  ;
+                    diskon = totalHarga * 0.05 - 0.02  ;
                 } else if (totalHarga > 300000) {
-                    diskon = totalHarga * 0.1 * 0.02  ;
+                    diskon = totalHarga * 0.1 - 0.02  ;
                 } 
                 
-                System.out.println("Diskon: " + diskon);
+               
                 grandTotal = totalHarga - diskon;
             }
         } else {
             // Jawab no / T
             System.out.println("Selamat Berbelanja di Inimaret! ");
+            System.out.print("Nama Barang: ");
+                namaBarang = scanner.nextLine();
+                System.out.print("Harga: ");
+                harga = scanner.nextDouble();
+                System.out.print("Jumlah Beli: ");
+                jumlahBeli = scanner.nextDouble();
+
+                System.out.println();
+
+                totalHarga = harga * jumlahBeli;
+                System.out.println("Nama Barang: " + namaBarang);
+                System.out.println("Harga: " + harga);
+                System.out.println("jumlah beli: " + jumlahBeli );
+                System.out.println("Diskon: " + diskon);
+                System.out.println("Total Harga: " + totalHarga);
+                //hitung diskon
+                if (totalHarga > 100000) {
+                    diskon = totalHarga * 0.05   ;
+                } else if (totalHarga > 300000) {
+                    diskon = totalHarga * 0.1  ;
+                } 
+                
+                
+                grandTotal = totalHarga - diskon;
+            }
+            scanner.close();
             
         } 
         // if (Jawab.equals("y") || Jawab.equals("Y")) {
@@ -96,8 +125,9 @@ public class latihanPercabangan {
 
         // } else {
             // jawab T
+            
         }
 
-    }
+    
 
 
