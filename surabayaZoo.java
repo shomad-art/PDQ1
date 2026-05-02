@@ -38,7 +38,7 @@ public class surabayaZoo {
                         System.out.print("Nama kategori ke-" + (i+1) + " : ");
                         kategori[i] = sc.nextLine(); // untuk input teks
 
-                        System.out.println("Harga tiket " + kategori[i] + "Rp. ");
+                        System.out.println("Harga tiket " + kategori[i] + " :Rp.  ");
                         harga[i] = sc.nextInt(); // untuk input angka
                         sc.nextLine(); // mencegah bug buffer (3)
 
