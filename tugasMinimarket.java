@@ -3,7 +3,7 @@ public class tugasMinimarket {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int menu, total = 0;
-        String namaBarang
+        String namaBarang;
 
         do {
             System.out.println("1. Entri Data");
@@ -19,7 +19,7 @@ public class tugasMinimarket {
                     // data diulang hingga 5x >>> for
                     System.out.print("Berapa data yang dibutuhkan:");
                     iterasi = scanner.nextInt();
-                    scanner.nextInt();
+                    scanner.nextLine();
                     for (int i=1; i<= iterasi; i++);
 
 
